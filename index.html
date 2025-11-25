@@ -1,1 +1,30 @@
 <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content="width-device-width, initial-scale=1.0">
+        <title>Login - CRM Educativo </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>CRM Educativo</h2>
+            <p class="subtitle">Plataforma de Admision Automatizada</p>
+
+            <form id="loginForm">
+                <label for="user">Usuario</label>
+                <input type="text" id="user" required placeholder="Ingrese su usuario">
+
+                <label for="pass">Contraseña</label>
+                <input type="password" id="pass" required placeholder="Ingrese su contraseña">
+                
+                <button type="submit">Ingresar</button>
+
+            </form>
+
+            <p id="error" class="error"></p>
+        </div>
+        
+        <script src="js/login.js"></script>
+    </body>
+    </html>
