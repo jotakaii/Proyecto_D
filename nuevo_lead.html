@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Lead</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Registrar Lead</h2>
+        <button onclick="window.location.href='dashboard.html'"> Volver</button>
+    </nav>
+
+    <div class="container">
+        <form id="leadForm" class="form-box">
+
+            <label>Nombre completo</label>
+            <input type="text" id="nombre" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Telefono</label>
+            <input type="text" id="telefono">
+
+            <label>Carrera de interes</label>
+            <input type="text" id="carrera" required>
+
+            <label>Estado del Lead</label>
+            <select id="estado">
+                <option value="Nuevo">Nuevo</option>
+                <option value="En seguimiento">En seguimiento</option>
+                <option value="Postuló">Postuló</option>
+            </select>
+            
+            <button type="submit">Guardar Lead</button>
+        </form>
+
+    </div>
+
+    <script src="js/nuevo_lead.js"></script>
+</body>
+</html>
