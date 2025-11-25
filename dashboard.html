@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device-width, initial-sacle=1.0">
+    <title>Dashboard - CRM Educativo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>CRM Educativo</h2>
+        <button id="logoutBtn">Cerrar sesión</button>
+    </nav>
+
+    <div class="container">
+        <h3>Pamel de Admision</h3>
+
+        <div class="cards">
+            <div class="card">
+                <h4>Total Leads</h4>
+                <p id="totalLeads"></p>
+            </div>
+
+            <div class="card">
+                <h4>Postulaciones</h4>
+                <p id="totalPostulaciones">0</p>
+            </div>
+
+            <div class="card">
+                <h4>Conversion</h4>
+                <p id="conversionRate">0%</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button onclick="window.location.href='nuevo_lead.html'">Registrar Lead</button>
+            <button onclick="window.location.href='leads.html'">Ver Leads</button>
+        </div>
+    </div>
+    
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
