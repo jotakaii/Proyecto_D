@@ -8,7 +8,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background: #3498db;
+    background: #db96ec;
     color: white;
     padding: 15px;
     display: flex;
@@ -127,7 +127,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 button {
     width: 100%;
     padding: 15px 20px;
-    background-color: #2ecc71;
+    background-color: #6a2bff;
     color: white;
     border: none;
     border-radius: 10px;
@@ -136,12 +136,12 @@ button {
 }
 
 button:hover {
-    background-color: #27ae60;
+    background-color: #6b2bff65;
 }
 
 /* BOTONES "Volver" y "Cerrar sesión" */
 .navbar button {
-    background-color: #34db3c;
+    background-color: #6a2bff;
     padding: 12px;
     font-size: 14px;
     color: white;
@@ -154,7 +154,7 @@ button:hover {
 }
 
 .navbar button:hover {
-    background-color: #2980b9;
+    background-color: #6b2bff65;
 }
 
 /* TABLA DE LEADS */

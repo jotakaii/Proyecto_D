@@ -1,10 +1,10 @@
-let leads = JSON.parse(localStorage.getItem("leads")) || [];
+document.getElementById("leadForm").addEventListener("submit", function(e) {
+    e.preventDefault();  // Evitamos el comportamiento por defecto del formulario
 
-document.getElementById("leadForm").addEventListener("submit", e => {
-    e.preventDefault();
+    let leads = JSON.parse(localStorage.getItem("leads")) || [];
 
-    const lead = {
-        id: Date.now(),
+    let lead = {
+        id: Date.now(),  // Generamos un ID único
         nombre: document.getElementById("nombre").value,
         email: document.getElementById("email").value,
         telefono: document.getElementById("telefono").value,
@@ -12,9 +12,9 @@ document.getElementById("leadForm").addEventListener("submit", e => {
         estado: document.getElementById("estado").value
     };
 
-    leads.push(lead);
-    localStorage.setItem("leads", JSON.stringify(leads));
+    leads.push(lead);  // Agregamos el nuevo lead al array
+    localStorage.setItem("leads", JSON.stringify(leads));  // Guardamos los leads en localStorage
 
     alert("Lead registrado con éxito");
-    window.location.href = "leads.html";
+    window.location.href = "leads.html";  // Redirigimos a la lista de leads
 });
