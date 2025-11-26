@@ -14,6 +14,6 @@ leads.forEach(l => {
 });
 
 function verDetalle(id) {
-    localStorage.setItem("leadActual", id);
+    localStorage.setItem("leadActual", id);  
     window.location.href = "detalle_lead.html";
 }
