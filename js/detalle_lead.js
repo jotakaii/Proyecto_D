@@ -1,7 +1,6 @@
 let leads = JSON.parse(localStorage.getItem("leads")) || [];
-let id = localStorage.getItem("leadActual");  // Recuperamos el ID guardado
-
-let lead = leads.find(l => l.id == id);  // Buscamos el lead por ID
+let id = localStorage.getItem("leadActual");  
+let lead = leads.find(l => l.id == id);  
 
 if (lead) {
     document.getElementById("detalleBox").innerHTML = `
