@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Postulación - Plataforma de Admisión</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Plataforma de Admisión Automatizada</h2>
+        <button onclick="window.location.href='index.html'">Ir a Login</button>
+    </nav>
+
+    <div class="container">
+        <form id="leadForm" class="form-box">
+
+            <label>Nombre completo</label>
+            <input type="text" id="nombre" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Telefono</label>
+            <input type="text" id="telefono">
+
+            <label>Carrera de interes</label>
+            <select id="carrera" required>
+                <option value="" disabled selected>Seleccione una carrera</option>
+                <option value="Ingeniería en Informatica">Ingeniería en Informatica</option>
+                <option value="Enfermeria">Enfermeria</option>
+                <option value="Derecho">Derecho</option>
+                <option value="Ingeniería en Administracion">Ingeniería en Administracion</option>
+                <option value="Electricidad">Electricidad</option>
+                <option value="Turismo">Turismo</option>
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="Gastronomía">Gastronomía</option>
+            </select>
+            
+            <button type="submit">Enviar Postulación</button>
+        </form>
+
+    </div>
+
+    <script src="js/admision.js"></script>
+</body>
+</html>
