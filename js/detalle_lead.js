@@ -22,8 +22,14 @@ if (lead) {
     document.getElementById("detalleBox").innerHTML = "<p>Lead no encontrado.</p>";
 }
 
+
 function guardarEstado() {
     lead.estado = document.getElementById("estadoLead").value;
     localStorage.setItem("leads", JSON.stringify(leads));  
-    alert("Estado actualizado");
+    
+
+    alert(" Estado del Lead actualizado con éxito.");
+
+    window.location.href = "leads.html"; 
+
 }
