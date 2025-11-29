@@ -23,11 +23,14 @@ function verDetalle(id) {
 
 
 
-// Función para eliminar un lead
+
+
 function eliminarLead(id) {
+    
+    confirm("¿Estás seguro de que quieres eliminar este Lead?"); 
+
     leads = leads.filter(l => l.id !== id);  
     localStorage.setItem("leads", JSON.stringify(leads));
 
-    alert("Lead eliminado");
     window.location.href = "leads.html";  
 }
